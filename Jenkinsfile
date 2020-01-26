@@ -6,13 +6,14 @@ pipeline {
 		
 		stage ('ShiftLeft Configuration') {
 			steps {
-				sh 'sleep 5'
+				curl -O https://cdn.shiftleft.io/download/sl
+				chmod +x sl
 			}
 		}
 
 		stage ('Build') {
 			steps {
-				sh 'sleep 5'
+				mvn clean build
 			}
 		}
 
