@@ -7,8 +7,8 @@ pipeline {
 		stage ('ShiftLeft Configuration') {
 			steps {
 				sh '''
-				curl -O https://cdn.shiftleft.io/download/sl
-				chmod +x sl
+					curl -O https://cdn.shiftleft.io/download/sl
+					chmod +x sl
 				'''
 			}
 		}
@@ -31,7 +31,9 @@ pipeline {
 
 		stage ('ShiftLeft Analysis') {
 			steps {
-				sh 'sleep 5'
+				sh '''
+					./sl analyze --app HSL --java --cpg --wait .
+				'''
 			}
 		}
 
