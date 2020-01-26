@@ -13,7 +13,7 @@ from urllib.parse import quote as urlquote
 # project and returns the data in the standard ShiftLeft JSON format.
 # That has been deserialized into a dictionary for queries.
 def acceptanceCriterion(data) :
-    return 0
+    return data['highImpactResults']
 
 ##
 # Main Entry Point
@@ -77,7 +77,8 @@ def main(args) :
         sys.exit(9)
 
     # return this result
-    return acceptanceCriterion(resp.json())
+    retval = acceptanceCriterion(resp.json())
+    return retval
 
 
 ##
