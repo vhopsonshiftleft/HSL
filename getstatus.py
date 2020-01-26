@@ -12,8 +12,11 @@ from urllib.parse import quote as urlquote
 # This routine gets the information from an API query against the desired
 # project and returns the data in the standard ShiftLeft JSON format.
 # That has been deserialized into a dictionary for queries.
+# 
+# The return value should be an integer
+#
 def acceptanceCriterion(data) :
-    return data['highImpactResults']
+    return int(data['highImpactResults'])
 
 ##
 # Main Entry Point
@@ -108,4 +111,4 @@ parser.add_argument("--app", "-a", required=True,
 
 args = parser.parse_args()
 if "__main__" == __name__ :
-    main(args)
+    return main(args)

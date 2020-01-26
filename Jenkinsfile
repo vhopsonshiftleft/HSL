@@ -33,7 +33,7 @@ pipeline {
 			steps {
 				sh '''
 					./sl analyze --app HSL --java --cpg --wait .
-					python3 getstatus.py --app "io.shiftleft-hello-shiftleft-jar" --version Vince
+					getstatus.py --app "io.shiftleft-hello-shiftleft-jar" --version Vince
 				'''
 			}
 
