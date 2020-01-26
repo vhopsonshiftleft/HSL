@@ -17,6 +17,16 @@ pipeline {
 			steps {
 				sh 'mvn clean install'
 			}
+
+			post {
+				success {
+					echo 'Maven Build success'
+				}
+				
+				failure {
+					echo 'Maven Build failure'
+				}
+			}
 		}
 
 		stage ('ShiftLeft Analysis') {
