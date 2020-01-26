@@ -33,13 +33,33 @@ pipeline {
 			steps {
 				sh '''
 					./sl analyze --app HSL --java --cpg --wait .
+					python3 GetStatus.py --app "io.shiftleft-hello-shiftleft-jar" --version Vince
 				'''
 			}
+
+			post {
+				success {
+					echo 'ShiftLeft Analysis Success!'
+				}
+
+				failure {
+					echo 'ShiftLeft Analysis Failed!'
+				}
 		}
 
 		stage ('ShiftLeft Agent Testing') {
 			steps {
 				sh 'sleep 5'
+			}
+
+			post {
+				success {
+					echo 'Testing successful!'
+				}
+
+				failure {
+					echo 'Testing failed!'
+				}
 			}
 		}
 	}
