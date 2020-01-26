@@ -45,6 +45,7 @@ pipeline {
 				failure {
 					echo 'ShiftLeft Analysis Failed!'
 				}
+			}
 		}
 
 		stage ('ShiftLeft Agent Testing') {
