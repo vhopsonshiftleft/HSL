@@ -8,7 +8,7 @@ pipeline {
 			steps {
 				sh '''
 					curl -O https://cdn.shiftleft.io/download/sl
-					chmod +x sl
+					chmod +x sl getstatus.py
 				'''
 			}
 		}
