@@ -111,4 +111,4 @@ parser.add_argument("--app", "-a", required=True,
 
 args = parser.parse_args()
 if "__main__" == __name__ :
-    return main(args)
+    exit(main(args))
