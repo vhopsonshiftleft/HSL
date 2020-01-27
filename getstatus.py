@@ -17,7 +17,6 @@ from urllib.parse import quote as urlquote
 #
 def acceptanceCriterion(data) :
     # return int(data['highImpactResults'])
-    print(data)
     return 0
 
 ##
