@@ -3,10 +3,12 @@ FROM adoptopenjdk/openjdk8
 # Capture build arguments
 ARG ORG
 ARG TOKEN
+ARG AGENT
 
 # Set environment variables for the running container
 ENV SHIFTLEFT_ORG_ID=$ORG
 ENV SHIFTLEFT_ACCESS_TOKEN=$TOKEN
+ENV SHIFTLEFT_SEC_COLLECT_ATTACK_INFO=$AGENT
 
 # collect ShiftLeft tools, and target JAR
 ADD https://cdn.shiftleft.io/download/sl /tmp
