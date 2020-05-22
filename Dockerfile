@@ -23,4 +23,4 @@ RUN chmod +r /tmp/shiftleft.json
 EXPOSE 8081
 
 # execute run
-CMD cd tmp ; ./sl run --app HSL --java -- java -jar -Dshiftleft.sec.collect.attack.info=true hello-shiftleft-0.0.1.jar
+CMD cd tmp ; ./sl run --app HSL --java -- java -Dshiftleft.sec.collect.attack.info=true -jar hello-shiftleft-0.0.1.jar
