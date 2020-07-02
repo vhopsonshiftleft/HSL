@@ -1,6 +1,5 @@
 BEGIN {
-        print "{ \"body\": \"#[ShiftLeft](https://shiftleft.io) -- Inspect Analysis Findings" ;
-        print ;
+        printf "{ \"body\": \"#[ShiftLeft](https://shiftleft.io) -- Inspect Analysis Findings\\n\\n" ;
         RS = "\n";
         FS = " ";
         APPL = "nothing";
@@ -17,7 +16,7 @@ BEGIN {
 }
 
 /New matching finding/ {
-  printf "%s: %s\n", $2, $3 ;
+  printf "%s: %s\\n", $2, $3 ;
   FS = " ";
   $0 = $0;
 }
