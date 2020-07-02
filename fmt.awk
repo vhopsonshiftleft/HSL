@@ -1,5 +1,5 @@
 BEGIN {
-        printf "{ \"body\": \"# [ShiftLeft](https://shiftleft.io) NG-SAST Analysis Compliance Failure\\n\\n" ;
+        printf "{ \"body\": \"# ![ShiftLeft](https://mms.businesswire.com/media/20190212005274/en/671131/23/logo_dark800px.jpg) NG-SAST Analysis Compliance Failure\\n\\n" ;
         RS = "\n";
         FS = " ";
         APPL = "nothing";
