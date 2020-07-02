@@ -1,5 +1,5 @@
 BEGIN {
-        printf "{ \"body\": \"# [![ShiftLeft](https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_120,w_120,f_auto,b_white,q_auto:eco/v1504497223/fildsndtwbaa2e7gw6qb.png =100x)](https://shiftleft.io) NG-SAST Analysis Compliance Failure\\n\\n" ;
+        printf "{ \"body\": \"# [ ![ShiftLeft](https://mms.businesswire.com/media/20190212005274/en/671131/23/logo_dark800px.jpg)](https://shiftleft.io) NG-SAST Analysis Compliance Failure\\n\\n" ;
         RS = "\n";
         FS = " ";
         APPL = "nothing";
