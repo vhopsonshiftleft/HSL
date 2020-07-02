@@ -1,5 +1,5 @@
 BEGIN {
-        printf "{ \"body\": \"# [ShiftLeft](https://shiftleft.io) -- Inspect Analysis Findings\\n___\\n" ;
+        printf "{ \"body\": \"# [ShiftLeft](https://shiftleft.io) NG-SAST Analysis Compliance Failure\\n\\n" ;
         RS = "\n";
         FS = " ";
         APPL = "nothing";
