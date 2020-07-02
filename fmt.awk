@@ -1,5 +1,5 @@
 BEGIN {
-        print "#[ShiftLeft](https://shiftleft.io) -- Inspect Analysis Findings" ;
+        print "{ \"body\": \"#[ShiftLeft](https://shiftleft.io) -- Inspect Analysis Findings" ;
         print ;
         RS = "\n";
         FS = " ";
@@ -22,3 +22,6 @@ BEGIN {
   $0 = $0;
 }
 
+END {
+  print "\" }"
+}
