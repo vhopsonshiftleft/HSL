@@ -1,5 +1,5 @@
 BEGIN {
-        printf "{ \"body\": \"# <img src=\\\"https://mms.businesswire.com/media/20190212005274/en/671131/23/logo_dark800px.jpg\\\" alt=\\\"ShiftLeft\\\" width=\\\"200\\\"/><p>NG-SAST Analysis Compliance Failure" ;
+        printf "{ \"body\": \"# <img src=\\\"https://mms.businesswire.com/media/20190212005274/en/671131/23/logo_dark800px.jpg\\\" alt=\\\"ShiftLeft\\\" width=\\\"200\\\"/><p>NG-SAST Analysis Compliance Failure\\n\\n" ;
         RS = "\n";
         FS = " ";
         APPL = "nothing";
