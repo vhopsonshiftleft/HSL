@@ -1,5 +1,7 @@
 source:
     scan: 59
 build_rules:
-    - id: No_New_Defects
+    - id: No_New_Critical_Defects
+	  severity:
+	    - SEVERITY_CRITICAL_IMPACT
       threshold: 0
