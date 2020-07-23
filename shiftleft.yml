@@ -1,5 +1,5 @@
 source:
-    scan: 84
+    scan: 87
 build_rules:
     - id: No_New_Defects
       threshold: 0
