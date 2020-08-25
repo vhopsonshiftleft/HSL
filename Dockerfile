@@ -13,7 +13,7 @@ ENV SHIFTLEFT_SEC_COLLECT_ATTACK_INFO=$AGENT
 # collect ShiftLeft tools, and target JAR
 ADD https://cdn.shiftleft.io/download/sl /tmp
 COPY target/hello-shiftleft-0.0.1.jar /tmp
-COPY shiftleft.json /tmp
+COPY shiftleft.json /tmp 
 
 # adjust the permissions for the copied files
 RUN chmod +x /tmp/sl
