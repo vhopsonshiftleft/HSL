@@ -3,7 +3,7 @@ FROM adoptopenjdk/openjdk8
 # Capture build arguments
 ARG ORG
 ARG TOKEN
-ARG AGENT
+ARG AGENT 
 
 # Set environment variables for the running container
 ENV SHIFTLEFT_ORG_ID=$ORG
