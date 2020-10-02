@@ -24,3 +24,4 @@ EXPOSE 8081
 
 # execute run
 CMD cd tmp ; ./sl run --app HSL --java -- java -Dshiftleft.sec.collect.attack.info=true -jar hello-shiftleft-0.0.1.jar
+
