@@ -32,7 +32,7 @@ public class PatientController {
   @RequestMapping(value = "/patients", method = RequestMethod.GET)
   public Iterable<Patient> getPatient() {
     Patient pat = patientRepository.findOne(1l);
-    if (pat != null) {
+    if (pat != null) { 
       log.info("First Patient is {}", pat.toString());
       log.info("First Patient is not NULL");
    }
