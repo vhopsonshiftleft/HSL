@@ -1,8 +1,7 @@
 source:
     # scan: 96
     # scan: 146
-    # scan: 181
-    scan: 1
+    scan: 181
 build_rules:
     - id: No_New_Defects
       findings:
