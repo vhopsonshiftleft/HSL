@@ -6,6 +6,7 @@ BEGIN {
 }
 
 /^Using application/ {
+        gsub(/`/, "", $3);
         APPL=$3;
 }
 
