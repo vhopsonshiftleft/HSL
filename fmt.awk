@@ -5,12 +5,12 @@ BEGIN {
         APPL = "nothing";
 }
 
-/\[INFO\] Using app/ {
-        APPL=$4;
+/^Using application/ {
+        APPL=$3;
 }
 
 /New matching finding / {
-  printf "* [ID %s](https://shiftleft.io/findingDetail/%s/%s) %s", $6, APPL, $6, $7 ;
+  printf "* [ID %s](https://shiftleft.io/findingDetail/%s/%s) %s", $5, APPL, $5, $6 ;
   FS = ":";
   $0 = $0;
 }
