@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk8
+FROM adoptopenjdk/openjdk8 
 
 # Capture build arguments
 ARG ORG
