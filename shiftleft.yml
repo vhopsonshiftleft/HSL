@@ -3,6 +3,6 @@ source:
     branch: master
 build_rules:
     - id: No_New_Defects
-      findings:
+      finding_types:
         - vuln
       threshold: 0
