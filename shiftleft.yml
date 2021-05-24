@@ -1,5 +1,4 @@
 source:
-    # scan: 96
     branch: master
 build_rules:
     - id: No_New_Defects
